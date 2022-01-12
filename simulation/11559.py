@@ -1,11 +1,9 @@
-
 import sys
 from collections import deque
 from copy import deepcopy
 
 sys.stdin = open('input.txt', 'r')
 field = []
-
 while True:
     l = list(sys.stdin.readline().rstrip())
     if not l:
