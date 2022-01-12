@@ -15,6 +15,7 @@ m, n = len(field), len(field[0])
 dx = [1, 0, -1, 0]
 dy = [0, 1, 0, -1]
 
+
 def bfs(i, j):
     que = deque([[i, j]])
     visited = set()
@@ -29,6 +30,7 @@ def bfs(i, j):
                     que.append([nx, ny])
     return visited
 
+
 def down(field):
     new_field = deepcopy(field)
     for j in range(n):
@@ -40,6 +42,7 @@ def down(field):
         for i in range(len(letter)):
             new_field[-1-i][j] = letter[i]
     return new_field
+
 
 ans = 0
 while True:
