@@ -3,7 +3,7 @@ from copy import deepcopy
 sys.stdin = open('input.txt', 'r')
 
 graph = []
-pos = {}
+
 for _ in range(4):
     a0, b0, a1, b1, a2, b2, a3, b3 = map(int, sys.stdin.readline().split())
     graph.append([[a0, b0-1], [a1, b1-1], [a2, b2-1], [a3, b3-1]])
