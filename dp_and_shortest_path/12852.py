@@ -1,4 +1,3 @@
-from dis import dis
 import sys
 sys.stdin = open('input.txt', 'r')
 N = int(sys.stdin.readline())
